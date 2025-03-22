@@ -12,68 +12,10 @@ function LogoutBtn() {
     }
   return (
     <button
-    className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+    className='px-4 py-2 text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 font-medium'
     onClick={logoutHandler}
     >Logout</button>
   )
 }
 
 export default LogoutBtn
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// backend logic update
-
-// backend logic update
