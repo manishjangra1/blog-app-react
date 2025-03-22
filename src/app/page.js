@@ -23,9 +23,10 @@ function Home() {
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
-                            <h1 className="text-3xl font-bold hover:text-gray-500">
-                                {authStatus ? "No posts found" : "Login to read posts"}
+                            <h1 className="text-4xl font-bold text-slate-800">
+                                No Blogs Yet
                             </h1>
+                            <p className="mt-4 text-slate-500">Be the first one to write something amazing!</p>
                         </div>
                     </div>
                 </Container>
@@ -35,7 +36,7 @@ function Home() {
     return (
         <div className='w-full py-8'>
             <Container>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {posts.map((post) => (
                         <div key={post.$id}>
                             <PostCard {...post} />
@@ -48,57 +49,3 @@ function Home() {
 }
 
 export default Home
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// backend logic update
-
-// backend logic update
