@@ -23,52 +23,29 @@ function PostCard({$id, title, featuredImage}) {
 
 export default PostCard
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// minor tweak
 
-// backend logic update
+
+
