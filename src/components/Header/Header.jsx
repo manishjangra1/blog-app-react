@@ -40,28 +40,27 @@ function Header() {
 
 
   return (
-    <header className='py-3 shadow bg-white border-b'>
+    <header className='py-3 shadow-sm bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100'>
       <Container>
-        <nav className='flex items-center'>
-          <div className='mr-4'>
+        <nav className='flex items-center justify-between'>
+          <div className='flex items-center'>
             <Link href='/'>
-              <Logo width='70px'   />
-
-              </Link>
+              <Logo width='70px' />
+            </Link>
           </div>
-          <ul className='flex ml-auto space-x-2'>
+          <ul className='flex items-center space-x-1'>
             {navItems.map((item) => 
             item.active ? (
               <li key={item.name}>
                 <button
                 onClick={() => router.push(item.slug)}
-                className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full font-medium'
+                className='px-4 py-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium'
                 >{item.name}</button>
               </li>
             ) : null
             )}
             {authStatus && (
-              <li>
+              <li className='ml-2 border-l pl-2 border-slate-200'>
                 <LogoutBtn />
               </li>
             )}
@@ -74,50 +73,4 @@ function Header() {
 
 export default Header
 
-// minor tweak
 
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// minor tweak
-
-// backend logic update
