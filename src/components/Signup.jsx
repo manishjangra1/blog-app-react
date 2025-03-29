@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, {useState} from 'react'
@@ -18,10 +19,10 @@ function Signup() {
     const create = async(data) => {
         setError("")
         try {
-            const userData = await authService.createAccount(data)
-            if (userData) {
+            const session = await authService.createAccount(data)
+            if (session) {
                 const userData = await authService.getCurrentUser()
-                if(userData) dispatch(login({userData}));
+                if(userData) dispatch(login({userData: JSON.parse(JSON.stringify(userData))}));
                 router.push("/")
             }
         } catch (error) {
@@ -89,35 +90,3 @@ function Signup() {
 }
 
 export default Signup
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

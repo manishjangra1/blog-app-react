@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, {useState} from 'react'
@@ -21,7 +22,7 @@ function Login() {
             const session = await authService.login(data)
             if (session) {
                 const userData = await authService.getCurrentUser()
-                if(userData) dispatch(authLogin({userData}));
+                if(userData) dispatch(authLogin({userData: JSON.parse(JSON.stringify(userData))}));
                 router.push("/")
             }
         } catch (error) {
@@ -84,36 +85,3 @@ function Login() {
 }
 
 export default Login
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
