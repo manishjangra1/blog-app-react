@@ -1,3 +1,4 @@
+
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Container from "./container/Container";
@@ -12,6 +13,7 @@ import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
 import Input from "./Input";
 import Select from "./Select";
+import AuthWrapper from "./AuthWrapper";
 
 export {
     Header,
@@ -28,4 +30,5 @@ export {
     AuthLayout,
     Input,
     Select,
+    AuthWrapper,
 }
