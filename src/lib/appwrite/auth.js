@@ -1,3 +1,4 @@
+
 import conf from '../../conf/conf.js';
 import { Client, Account, ID } from "appwrite";
 
@@ -28,8 +29,12 @@ export class AuthService {
 
     async login({email, password}) {
         try {
-            return await this.account.createEmailPasswordSession(email, password);
+            const session = await this.account.createEmailPasswordSession(email, password);
+            return session;
         } catch (error) {
+            if (error.code === 401 || error.type === 'user_session_already_exists') {
+                return await this.getCurrentUser();
+            }
             throw error;
         }
     }
@@ -56,26 +61,3 @@ export class AuthService {
 const authService = new AuthService();
 
 export default authService
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
