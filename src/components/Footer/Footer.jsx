@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Link from 'next/link'
 import Logo from '../Logo'
@@ -108,36 +109,3 @@ function Footer() {
 }
 
 export default Footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
