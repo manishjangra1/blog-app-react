@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, {useState, useEffect} from 'react'
@@ -30,31 +31,3 @@ function AllPosts() {
 }
 
 export default AllPosts
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
