@@ -1,3 +1,4 @@
+
 'use server'
 
 import { revalidatePath } from 'next/cache'
@@ -14,4 +15,3 @@ export async function submitComment(postId, commentData) {
     revalidatePath(`/post/${postId}`);
     return { success: true };
 }
-
