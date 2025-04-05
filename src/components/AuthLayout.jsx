@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, {useEffect, useState} from 'react'
@@ -21,26 +22,3 @@ export default function Protected({children, authentication = true}) {
 
   return loader ? <h1>Loading...</h1> : <>{children}</>
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
