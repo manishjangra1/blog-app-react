@@ -1,3 +1,4 @@
+
 import React from 'react'
 import appwriteService from "@/lib/appwrite/config"
 import Link from 'next/link'
@@ -20,32 +21,4 @@ function PostCard({$id, title, featuredImage}) {
   )
 }
 
-
 export default PostCard
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
