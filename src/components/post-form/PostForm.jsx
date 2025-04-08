@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, { useCallback } from "react";
@@ -37,16 +38,17 @@ export default function PostForm({ post }) {
                 router.push(`/post/${dbPost.$id}`);
             }
         } else {
-            const file = await appwriteService.uploadFile(data.image[0]);
+            const file = data.image[0] ? await appwriteService.uploadFile(data.image[0]) : null;
 
             if (file) {
                 const fileId = file.$id;
                 data.featuredImage = fileId;
-                const dbPost = await appwriteService.createPost({ ...data, userId: userData.$id });
+            }
 
-                if (dbPost) {
-                    router.push(`/post/${dbPost.$id}`);
-                }
+            const dbPost = await appwriteService.createPost({ ...data, userId: userData.$id });
+
+            if (dbPost) {
+                router.push(`/post/${dbPost.$id}`);
             }
         }
     };
@@ -98,7 +100,7 @@ export default function PostForm({ post }) {
                     type="file"
                     className="mb-4"
                     accept="image/png, image/jpg, image/jpeg, image/gif"
-                    {...register("image", { required: !post })}
+                    {...register("image", { required: false })}
                 />
                 {post && (
                     <div className="w-full mb-4">
@@ -122,44 +124,3 @@ export default function PostForm({ post }) {
         </form>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
