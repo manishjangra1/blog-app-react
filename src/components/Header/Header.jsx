@@ -1,3 +1,4 @@
+
 'use client'
 
 import React from 'react'
@@ -38,7 +39,6 @@ function Header() {
   },
   ]
 
-
   return (
     <header className='py-3 shadow-sm bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100'>
       <Container>
@@ -72,5 +72,3 @@ function Header() {
 }
 
 export default Header
-
-
