@@ -3,9 +3,9 @@
 import React from 'react'
 import { Controller } from 'react-hook-form';
 import dynamic from 'next/dynamic';
-import 'react-quill/dist/quill.snow.css';
+import 'react-quill-new/dist/quill.snow.css';
 
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+const ReactQuill = dynamic(() => import('react-quill-new'), { ssr: false });
 
 export default function RTE({name, control, label, defaultValue =""}) {
   return (
